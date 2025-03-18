@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  video-analyzer:
+    build: .
+    volumes:
+      - ./data:/app/data
+      - ./output:/app/output
+    command: /app/data/Raw-Data.mp4
